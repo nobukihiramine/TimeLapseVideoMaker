@@ -82,8 +82,8 @@
 
 1. 準備  
    "image_output" ディレクトリ(※1)から、タイムラプス動画の元とする画像ファイルを、"video_source" ディレクトリ(※2) に移動します。
-   - ※1 "image_output" ディレクトリ : save_frame.sh の引数にて変更可能
-   - ※2 "video_source" ディレクトリ : make_video.sh の引数にて変更可能
+   - ※1 "image_output" ディレクトリ : save_frame.sh の引数にて変更可能。
+   - ※2 "video_source" ディレクトリ : make_video.sh の引数にて変更可能。
 
 2. スクリプトの実行
    ```shell
@@ -95,7 +95,7 @@
 
 3. 結果の確認  
    "video_output" ディレクトリ(※3) に、タイムラプス動画ファイルが "timelapse_YYYYmmDD_HHMMSS.mp4" 形式のファイル名で保存されます。
-   - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能
+   - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能。
 
 # License (ライセンス)
 
