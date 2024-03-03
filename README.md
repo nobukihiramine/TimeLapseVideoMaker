@@ -48,7 +48,8 @@
 
 2. スクリプトの実行  
    ```shell
-   ./TimeLapseVideoMaker/save_frame.sh
+   cd TimeLapseVideoMaker 
+   ./save_frame.sh
    ```
 
 3. 結果の確認  
@@ -69,7 +70,7 @@
 1. cron設定  
    以下の書式で、コマンドの予約実行をcron設定します。  
    ```shell
-   分 時 日 月 曜日 ./TimeLapseVideoMaker/save_frame.sh 解像度 画像フォーマット 出力ディレクトリパス
+   分 時 日 月 曜日 cd TimeLapseVideoMaker; ./save_frame.sh 解像度 画像フォーマット 出力ディレクトリパス
    ```
    - 解像度 : Webカメラからの画像の解像度を "幅x高さ" の書式で指定します。省略可。省略した場合は "640x480"。
    - 画像フォーマット : Webカメラからの画像のフォーマットを指定します。省略可。省略した場合は "YUYV"。
