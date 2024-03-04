@@ -21,12 +21,13 @@
    - Raspberry Pi OS version 11 (bullseye)
    - Python version 3.11.2
    - fswebcam version 20140113
+   - ffmpeg version 5.1.4
 
 # 2. セットアップ
 
 1. 必要となるパッケージのインストール
    ```shell
-   $ sudo apt install git -y
+   $ sudo apt install -y git
    $ sudo apt install -y fswebcam
    $ sudo apt install -y ffmpeg
    ```
@@ -35,10 +36,14 @@
    ```shell
    $ git clone https://github.com/nobukihiramine/TimeLapseVideoMaker
    ```
-
-3. シェルスクリプトファイルに実行権限の付与
+3. ディレクトリ移動
    ```shell
-   $ chmod +x ./TimeLapseVideoMaker/*.sh
+   $ cd TimeLapseVideoMaker 
+   ```
+
+4. シェルスクリプトファイルに実行権限の付与
+   ```shell
+   $ chmod +x *.sh
    ```
 
 # 3. Webカメラからの画像の保存の動作確認
@@ -48,7 +53,6 @@
 
 2. スクリプトの実行  
    ```shell
-   cd TimeLapseVideoMaker 
    ./save_frame.sh
    ```
 
@@ -88,7 +92,7 @@
 
 2. スクリプトの実行
    ```shell
-   $ ./TimeLapseVideoMaker/make_video.sh フレームレート[fps] 入力ディレクトリパス 出力ディレクトリパス
+   $ ./make_video.sh フレームレート[fps] 入力ディレクトリパス 出力ディレクトリパス
    ```
    - フレームレート[fps] : 1秒に何枚の画像を使用するかを指定します。省略可。省略した場合は "30"。
    - 入力ディレクトリパス : タイムラプス動画の元となる画像ファイルが入っているディレクトリパスを指定します。省略可。省略した場合は "video_source"。
