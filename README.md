@@ -18,7 +18,7 @@
 * 動作確認環境  
    - Raspberry Pi 3 Model B
    - Logicool Webカメラ C270
-   - Raspberry Pi OS version 11 (bullseye)
+   - Raspberry Pi OS version 12 (bookworm)
    - Python version 3.11.2
    - fswebcam version 20140113
    - ffmpeg version 5.1.4
