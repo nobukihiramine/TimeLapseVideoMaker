@@ -100,7 +100,10 @@
 
 3. 結果の確認  
    "video_output" ディレクトリ(※3) に、タイムラプス動画ファイルが "timelapse_YYYYmmDD_HHMMSS.mp4" 形式のファイル名で保存されます。
-   - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能。
+   - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能。  
+
+4. 作成結果サンプル  
+   <video controls src="samples/timelapse_sample.mp4"/>
 
 # License (ライセンス)
 

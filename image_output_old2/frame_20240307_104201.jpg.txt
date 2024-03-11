@@ -1,3 +1,0 @@
-[31mError opening device: /dev/video0
-[0m[31mopen: No such file or directory
-[0m
