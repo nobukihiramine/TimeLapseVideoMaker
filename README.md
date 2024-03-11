@@ -102,9 +102,6 @@
    "video_output" ディレクトリ(※3) に、タイムラプス動画ファイルが "timelapse_YYYYmmDD_HHMMSS.mp4" 形式のファイル名で保存されます。
    - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能。  
 
-4. 作成結果サンプル  
-   <video width="640" height="480" controls><source src="samples/timelapse_sample.mp4" type="video/mp4"></video>
-
 # License (ライセンス)
 
 Copyright 2023 Nobuki HIRAMINE  
