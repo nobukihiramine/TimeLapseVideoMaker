@@ -103,7 +103,7 @@
    - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能。  
 
 4. 作成結果サンプル  
-   <video controls><source src="samples/timelapse_sample.mp4" type="video/mp4"/></vide>
+   <video width="640" height="480" controls><source src="samples/timelapse_sample.mp4" type="video/mp4"/></video>
 
 # License (ライセンス)
 
