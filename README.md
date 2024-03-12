@@ -102,6 +102,10 @@
    "video_output" ディレクトリ(※3) に、タイムラプス動画ファイルが "timelapse_YYYYmmDD_HHMMSS.mp4" 形式のファイル名で保存されます。
    - ※3 "video_output" ディレクトリ : make_video.sh の引数にて変更可能。  
 
+4. 生成動画サンプル  
+   1分ごとに撮影したWebカメラの画像 300枚(300[分]分=5時間分) を元に生成した、フレームレート 30[fps]、10秒(300枚/30[fps]=10秒) の動画サンプル
+   <video controls src="https://github.com/nobukihiramine/TimeLapseVideoMaker/assets/31594353/7e1875d3-7de7-4033-bff3-9573057c787d" />
+
 # License (ライセンス)
 
 Copyright 2023 Nobuki HIRAMINE  
