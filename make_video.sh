@@ -16,13 +16,17 @@
 
 # make_video.sh
 # 画像からタイムラプス動画の作成
+# Arguments
+#   $1 : Frame rate[fps] : Optional. Default is 30[fps].
+#   $2 : Video file source directory : Optional. Default is "video_source".
+#   $3 : Video file output directory : Optional. Default is "video_output".
 
 # フレームレート
-readonly FRAMERATE="30"
+readonly FRAMERATE="30""${1:-30}"
 # ビデオソースのディレクトリ
-readonly VIDEO_SOURCE_DIR="video_source"
+readonly VIDEO_SOURCE_DIR="${2:-video_source}"
 # ビデオの出力ディレクトリ
-readonly VIDEO_OUTPUT_DIR="video_output"
+readonly VIDEO_OUTPUT_DIR="${3:-video_output}"
 
 # 出力ディレクトリがない場合は作成する
 mkdir -p "${VIDEO_OUTPUT_DIR}"
