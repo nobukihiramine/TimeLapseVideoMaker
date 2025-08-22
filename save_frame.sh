@@ -16,13 +16,20 @@
 
 # save_frame.sh
 # Webカメラからの画像の保存
+# Arguments
+#   $1 : Resolution : Optional. Default is "640x480".
+#   $2 : Image format : Optional. Default is "YUYV".
+#   $3 : Image file output directory : Optional. Default is "image_output".
 
-# フレーム画像の出力ディレクトリ
-readonly IMAGE_OUTPUT_DIR="image_output"
-# 画像フォーマット
-readonly IMAGEFORMAT="YUYV"
+# save_frame.sh
+# Webカメラからの画像の保存
+
 # 解像度
-readonly RESOLUTION="640x480"
+readonly RESOLUTION="${1:-640x480}"
+# 画像フォーマット
+readonly IMAGEFORMAT="${2:-YUYV}"
+# フレーム画像の出力ディレクトリ
+readonly IMAGE_OUTPUT_DIR="${3:-image_output}"
 
 # 出力ディレクトリがない場合は作成する
 mkdir -p "${IMAGE_OUTPUT_DIR}"
